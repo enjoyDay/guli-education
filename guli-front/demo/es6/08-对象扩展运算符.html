@@ -1,0 +1,15 @@
+<script>
+    // 1、拷贝对象
+
+    let person1 = { name: "Amy", age: 15 }
+
+    let someone = { ...person1 }
+
+    console.log(someone)  //{name: "Amy", age: 15}
+
+    // 2、合并对象
+    let person2 = {name:"hah"};
+    let person3 = {age:22};
+    let p = {...person2,...person3};
+    console.log(p);
+</script>

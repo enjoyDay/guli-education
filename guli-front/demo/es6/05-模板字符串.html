@@ -1,0 +1,28 @@
+<script>
+    // 注意使用反引号`
+    const str = `
+        hi,
+        hello, world
+    `;
+    console.log(str);// 输出多行字符串
+    
+    let name = '六六六';
+    const str1 = `你好，${name}`; // 直接调用变量
+    console.log(str1);
+
+    let person={
+        name,
+        name1:"ads",
+        sayHi(){
+            return "hi";
+        }
+    }
+    let str3 = `你好：${person.sayHi()},${person.name1},${person.name}`; // 调用方法简写的
+
+    function sayHello() {
+        return "hello";
+    }
+    console.log(str3);
+    let str4 = `你好：${sayHello()}`;// 调用普通方法
+    console.log(str4);
+</script>

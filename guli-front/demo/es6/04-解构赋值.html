@@ -1,0 +1,23 @@
+<script>
+    // 传统的写法
+    let a = 1, b = 2, c = 3;
+    console.log(a, b, c);
+
+    // 数组解构
+    let [x, y, z] = [1, 2, 3];
+    console.log(x, y, z);
+
+    // 解构对象
+    //2、对象解构
+
+    let user = { name: 'Helen', age: 18 }
+    // 传统
+    let name1 = user.name;
+    let age1 = user.age;
+
+    console.log(name1 , age1);
+    // ES6
+    let {name, age} = user;// 注意，这里的name和user对象中key要对应
+    console.log(name , age);
+
+</script>
